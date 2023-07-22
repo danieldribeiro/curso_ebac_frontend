@@ -28,7 +28,6 @@ header{
 
 .logo{
     width: 50px;
-    filter: invert();
 }
 
 header nav{
@@ -52,13 +51,8 @@ header nav ul{
 }
 
 main{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px 0;
-}
-
-section{
-    margin-bottom: 20px;
 }
 
 .sports-section{
