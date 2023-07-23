@@ -297,7 +297,8 @@ section{
     gap: 10px;
 }
 
-.learn-from-the-best{
+.learn-from-the-best,
+.our-partners{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -305,11 +306,18 @@ section{
     text-align: center;
 }
 
-.learn-from-the-best h1{
+.learn-from-the-best{
+    margin-bottom: 5rem;
+}
+
+.learn-from-the-best h1,
+.our-partners h1,
+.main-courses h1{
     font-size: 4rem;
 }
 
-.learn-from-the-best .p{
+.learn-from-the-best .p,
+.our-partners .p{
     width: 85%;
 }
 
@@ -326,6 +334,7 @@ section{
 .instructor{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     width: 24%;
 }
@@ -345,4 +354,96 @@ section{
 
 .instructors-container .instructor p{
     font-size: 1.5rem;
+}
+
+.partners-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7%;
+    row-gap: 5rem;
+    margin-top: 5rem;
+    padding: 0 5%;
+}
+
+.partner{
+    width: 12%;
+}
+
+.courses{
+    width: 100%;
+    border-radius: 20px;
+    background-image: url('../images/main-courses-section-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 5rem;
+}
+
+.course-card-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2rem;
+}
+
+.courses h1,
+.courses h3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.courses h3{
+    font-size: 2rem;
+}
+
+.course-card{
+    width: 19%;
+    height: 450px;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    transition: .3s ease-in-out;
+}
+
+.course-card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.course-card-image{
+    width: 100%;
+    height: 65%;
+    border-radius: 20px;
+}
+
+.course-card h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.course-card-btn-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.course-card-btn{
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #10001f;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem;
 }
