@@ -63,6 +63,10 @@ form > p{
     display: none;
 }
 
+#success-alert{
+    background-color: green;
+}
+
 form > button{
     width: 25%;
     margin: 0 auto;
