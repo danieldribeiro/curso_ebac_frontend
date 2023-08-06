@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #292929;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+h2{
+    color: #fff;
+    font-size: 3em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 25%;
+}
+
+form > input{
+    width: 20%;
+    margin: 0 auto;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    padding: 5%;
+    text-align: center;
+    font-size: 1.3em;
+    outline: 2px solid rgb(6, 133, 133);
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%{
+        box-shadow: 0 0 10px 4px rgb(6, 133, 133);
+    }
+    50%{
+        box-shadow: 0 0 10px 3px rgba(6, 133, 133, 0.466);
+    }
+    100%{
+        box-shadow: 0 0 10px 4px rgb(6, 133, 133);
+    }
+}
+
+form > p{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+form > button{
+    width: 25%;
+    margin: 0 auto;
+    height: 40px;
+    font-size: 1.3em;
+    background-color: rgb(6, 133, 133);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+form > button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 2px rgb(6, 133, 133);;
+}
