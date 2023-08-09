@@ -24,6 +24,7 @@ form{
     width: 40%;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 2%;
 }
 
@@ -61,7 +62,6 @@ form > button:hover{
 
 #task-list{
     width: 36%;
-    margin-left: -50px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -96,4 +96,22 @@ li{
 
 .bi-trash3{
     color: red;
+}
+
+.invalidTask{
+    outline: 1px solid red;
+    box-shadow: 0 0 10px 2px red;
+    animation: shake .5s ease-in-out !important;
+}
+
+@keyframes shake {
+    0%{
+        transform: translateX(-10px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
