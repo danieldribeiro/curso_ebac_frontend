@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <h2>Cadastro de Dev</h2>
+    <form>
+        <div>
+            <label for="inputNome">Nome completo</label>
+            <input type="text" placeholder="Nome completo" id="inputNome" required class="input" name="name">
+        </div>
+        <div>
+            <label for="inputEmail">E-mail</label>
+            <input type="email" placeholder="email@email.com" id="inputEmail" required class="input" name="email">
+        </div>
+        <div>
+            <label for="inputTelefone">Telefone</label>
+            <input type="tel" placeholder="(00) 00000-0000" id="inputTelefone" required class="input" name="tel" minlength="9" maxlength="9">
+        </div>
+        <div>
+            <label for="inputCpf">CPF</label>
+            <input type="text" id="inputCpf" minlength="11" maxlength="11" required class="input" name="cpf">
+        </div>
+        <div>
+            <label for="inputCep">CEP</label>
+            <input type="text" placeholder="00000-000" id="inputCep" required class="input" name="cep" minlength="8" maxlength="8">
+        </div>
+        <div>
+            <label for="inputEndereço">Endereço completo</label>
+            <input type="text" placeholder="Rua dos sonhos, 10, Bairro, Cidade" id="inputEndereço" required class="input" name="endereço">
+        </div>
+        <button id="btnSubmit">Cadastrar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_pt_BR.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

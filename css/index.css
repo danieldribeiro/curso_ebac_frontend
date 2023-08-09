@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(8, 8, 8, 0.801), rgba(8, 8, 8, 0.801)),url('https://previews.123rf.com/images/monsitj/monsitj1801/monsitj180100069/94031884-programming-code-abstract-technology-background-of-software-developer-and-computer-script.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 1.5em;
+    gap: 40px;
+}
+
+h2{
+    font-size: 2em;
+}
+
+form{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+form div input{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 3%;
+}
+
+form button{
+    width: 50%;
+    padding: 2% 5%;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: rgb(1, 155, 1);
+    color: #fff;
+    font-size: .8em;
+    cursor: pointer;
+}
