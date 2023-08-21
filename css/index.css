@@ -29,6 +29,7 @@ header{
 nav > ul > li{
     list-style: none;
     font-size: 1.1em;
+    font-weight: bold;
 }
 
 nav > ul > li > a{
@@ -103,4 +104,76 @@ hr{
 
 .btn-add-carrinho:active{
     background-color: rgb(16, 98, 250);
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .header-content-wrapper{
+        align-items: center;
+    }
+
+    nav > ul{
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .produto-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .produto{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 30px;
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header-content-wrapper{
+        align-items: center;
+    }
+
+    nav > ul{
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sobre-section{
+        display: flex;
+        gap: 5%;
+    }
+
+    .sobre-section picture{
+        width: 100%;
+    }
+    
+    .sobre-descricao{
+        width: 100%;
+    }
+    
+    .sobre-descricao h3,
+    .produtos h3{
+        color: rgb(57, 124, 249);
+        font-size: 1.5em;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+    .produto-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .produto{
+        width: 20%;
+    }
+
+    .produto button{
+        font-size: 1em;
+    }
 }
