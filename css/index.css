@@ -130,7 +130,9 @@ span{
     color: #fff;
 }
 
-.cartaz-section{
+.cartaz-section,
+.cardapio-section,
+.contato-section{
     width: 100%;
     margin: 0 auto;
     margin-top: 330px;
@@ -140,7 +142,9 @@ span{
     padding: 2%;
 }
 
-.cartaz-section hr{
+.cartaz-section hr,
+.cardapio-section hr,
+.contato-section hr{
     width: 95%;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -171,4 +175,164 @@ span{
 .rating .bi{
     color: yellow;
     filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.808));
+}
+
+.cardapio-section{
+    margin-top: 0;
+}
+
+.tab{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-option{
+    color: #fff;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #fff;
+    color: #000;
+}
+
+.product-image{
+    width: 100%;
+    height: 200px;
+}
+
+.contato-section{
+    margin: 0;
+}
+
+.btn-form{
+    background-color: rgb(193, 31, 31);
+    color: #fff;
+    padding: 2% 5%;
+}
+
+.btn-form:hover,
+.btn-form:active{
+    background-color: rgb(144, 13, 13);
+}
+
+footer{
+    padding: 10% 0 2% 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px){
+    .nav-links-wrapper{
+        top: 69px;
+        height: 200px;
+    }
+
+    .nav-links{
+        line-height: 65px;
+        font-size: 1.5em;
+    }
+
+    .carousel-item img{
+        height: 600px;
+    }
+
+    .movies-details{
+        width: 100%;
+        height: 100%;
+        padding: 20% 5%;
+        font-size: 1.5em;
+    }
+
+    .cartaz-section,
+    .cardapio-section,
+    .contato-section{
+        margin-top: 530px;
+    }
+
+    .cartaz-section h2,
+    .cardapio-section h2,
+    .contato-section h2{
+        font-size: 2.5em;
+    }
+
+    .card{
+        font-size: 1.2em;
+    }
+
+    .card-image{
+        height: 300px;
+    }
+
+    .cardapio-section,
+    .contato-section{
+        margin: -1px;
+    }
+
+    .tab{
+        width: 90%;
+        font-size: 1.8em;
+    }
+
+    .product-image{
+        height: 135px;
+    }
+
+    .titulo-produto{
+        padding: 10% 0;
+    }
+
+    .form-control{
+        width: 90%;
+        margin: 0 auto;
+        height: 70px;
+        font-size: 1.3em;
+    }
+
+    .btn-form{
+        padding: 1% 5%;
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .burguer-menu-icon{
+        display: none;
+    }
+
+    .nav-links-wrapper{
+        display: block;
+        position: relative;
+        background-color: transparent;
+    }
+
+    .nav-links-wrapper > ul{
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    .nav-links{
+        color: #fff;
+    }
+
+    .nav-links:hover,
+    .nav-links:active{
+        background-color: transparent;
+    }
+
+    .link-breaker{
+        display: none;
+    }
+
+    .titulo-produto{
+        padding: 13% 0;
+    }
+
+    .product-image{
+        height: 220px;
+    }
 }
