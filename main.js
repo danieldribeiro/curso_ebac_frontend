@@ -12,6 +12,7 @@ $(document).ready(() => {
       const repositories = json.public_repos;
       const followers = json.followers;
       const following = json.following;
+      const profileLink = json.html_url;
 
       $("#user-image").attr("src", userImage);
       $("#profile-name").text(profileName);
@@ -19,6 +20,7 @@ $(document).ready(() => {
       $("#repositories").text(repositories);
       $("#followers").text(followers);
       $("#following").text(following);
+      $("#profile-link").attr("href", profileLink)
     })
     .catch((err) => {
         alert('Ocorreu um erro ao buscar o endereço, tente novamente mais tarde')
